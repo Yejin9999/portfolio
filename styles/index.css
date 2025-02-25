@@ -8,10 +8,11 @@ header nav a {
     font-size:1.06rem; font-weight:500;
 }
 header nav a:last-child {margin:0;}
-header nav .active {
+header nav a:hover {
     color:#244B86;
     padding-bottom:8px; border-bottom:2px solid #244B86;
 }
+header nav .active {}
 /* 헤더끝======= */
 .info_bg {
     width:100%;
@@ -40,9 +41,9 @@ header nav .active {
     margin-bottom:50px; text-align:left;
 }
 /* 메인시작 */
-main {background-color:pink; width:1500px; margin:200px auto 0;}
+main {width:1500px; margin:200px auto 0;}
 /* about me */
-main .aboutme_wrap {background-color:skyblue;}
+main .aboutme_wrap {}
 main .aboutme_wrap h2 {font-size:1.56rem; font-weight:700; line-height:1.7;}
 main .aboutme_wrap h2 span {font-size:1.56rem; font-weight:700; color:#244B86;}
 main .aboutme_wrap .aboutme_contents {
@@ -111,24 +112,26 @@ main .aboutme_wrap .aboutme_contents .aboutme_right .skills_wrap .skills p:last-
 main .aboutme_wrap .aboutme_contents .aboutme_right .skills_wrap .skills p img {}
 
 /* 웹작품 스와이프 */
+main * h1 {font-size:6.25rem; font-weight:700; letter-spacing:-0.02rem;
+    color:#244B86; margin-bottom:100px;
+}
 main .webpage_container {margin:200px 0;}
 main .webpage_container h1 {
     font-size:6.25rem; font-weight:700; letter-spacing:-0.02rem;
     color:#244B86; margin-bottom:100px;
 }
 main .webpage_container .web_swiper {
-    background-color:lime;
+    background-color:lime; width:max-content;
 }
 main .webpage_container .web_swiper .swiper-wrapper {
+    width:1260px;
 }
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide {
     display:flex; align-items:center; justify-content:space-between;
 }
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide p {}
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide p img {}
-main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents {
-    background-color:coral;
-}
+main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents {}
 main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .webname {
     font-size:1.56rem; font-weight:700; letter-spacing:-0.02rem; line-height:1.7;
 }
@@ -164,3 +167,25 @@ main .webpage_container .web_swiper .swiper-wrapper .swiper-slide .webcontents .
     font-size:0.88rem; font-weight:700; letter-spacing:-0.02rem; line-height:1.7; color:#fff;
 }
 main .webpage_container .web_swiper .swiper-scrollbtn {}
+main .webpage_container .web_swiper .swiper-scrollbtn .prev {}
+main .webpage_container .web_swiper .swiper-scrollbtn .next {}
+
+/* 디자인부분 스와이퍼 */
+main .design_container {background-color:pink;}
+main .design_container h1 {}
+/* sns */
+main .design_container .sns_container {margin:100px 0 50px 0;}
+main .design_container .sns_container .designtitle {font-size:1.88rem; font-weight:600; letter-spacing:-0.02rem;}
+main .design_container .sns_container .designtitle .sns {}
+main .design_container .sns_container .designtitle .sns .swiper-wrapper {
+    transition-timing-function:linear; margin-top:50px;
+}
+main .design_container .sns_container .designtitle .sns .swiper-wrapper .s {cursor:pointer;}
+main .design_container .sns_container .designtitle .sns .swiper-wrapper .s img {width:100%;}
+/* bnr */
+main .design_container .bnr_container {}
+main .design_container .bnr_container .designtitle {font-size:1.88rem; font-weight:600; letter-spacing:-0.02rem;}
+main .design_container .bnr_container .designtitle .bnr{}
+main .design_container .bnr_container .designtitle .bnr .swiper-wrapper {transition-timing-function:linear;}
+main .design_container .bnr_container .designtitle .bnr .swiper-wrapper .b {cursor:pointer;}
+main .design_container .bnr_container .designtitle .sbnr .swiper-wrapper .b img {width:100%;}
