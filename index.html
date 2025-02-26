@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2025포트폴리오_안예진</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
@@ -18,19 +20,28 @@
             <a href="#">Project</a>
         </nav>
     </header>
+    <!-- info부분 -->
     <div class="info_bg">
         <div class="info_wrap">
-            <div class="info_Ltitle">
-                <p>WEB DESIGNER</p>
-                <p><em>PORT<BR>FOLIO.</em></p>
-            </div>
-            <div class="info_Rtitle">
-                <p>항상 배우고 성장하는 디자이너</p>
-                <p>2025 AHNYEJIN PORTFOLIO</p>
+            <div class="ball_wrap">
+                <div class="ball-animation">
+                    <div class="ball-decoration"></div>
+                </div>
+                <div class="info_Ltitle">
+                    <p>WEB DESIGNER</p>
+                    <div class="loader">
+                        <p><em>PORT<BR>FOLIO</em></p>
+                    </div>
+                </div>
+                <div class="info_Rtitle">
+                    <p>항상 배우고 성장하는 디자이너</p>
+                    <p>2025 AHNYEJIN PORTFOLIO</p>
+                </div>
             </div>
         </div>
     </div>
     <main>
+        <!-- 내소개 -->
         <div class="aboutme_wrap">
             <h2>안녕하세요.<br>항상 겸손함으로 성장해나가는<br><span>웹디자이너 안예진</span>입니다.</h2>
             <div class="aboutme_contents">
@@ -109,6 +120,7 @@
                 </div>
             </div>
         </div>
+        <!-- 웹디자인작품 -->
         <div class="webpage_container">
             <h1>WEB</h1>
             <div class="swiper web_swiper">
@@ -218,45 +230,82 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="swiper-scrollbtn">
+                <a href="#" class="prev"><img src="./images/prev.png" alt="이전"></a>
+                <a href="#" class="next"><img src="./images/next.png" alt="다음"></a>
+            </div>
+        </div>
+        <!-- 디자인작품(sns,bnr,detail) -->
+        <div class="design_container">
+            <h1>DESIGN</h1>
+            <!-- ===sns=== -->
+            <div class="sns_container">
+                <div class="loader">
+                    <p class="designtitle">SNS</p>  
+                </div>
+                <div class="swiper sns">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide s"><img src="./images/sns1.png" alt=""></div>
+                        <div class="swiper-slide s"><img src="./images/sns2.png" alt=""></div>
+                        <div class="swiper-slide s"><img src="./images/sns1.png" alt=""></div>
+                        <div class="swiper-slide s"><img src="./images/sns2.png" alt=""></div>
+                        <div class="swiper-slide s"><img src="./images/sns1.png" alt=""></div>
+                        <div class="swiper-slide s"><img src="./images/sns2.png" alt=""></div>
+                        <div class="swiper-slide s"><img src="./images/sns1.png" alt=""></div>
+                        <div class="swiper-slide s"><img src="./images/sns2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===bnr=== -->
+            <div class="bnr_container">
+                <div class="loader">
+                    <p class="designtitle">BNR</p>  
+                </div>
+                <div class="swiper bnr">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
+                        <div class="swiper-slide b"><img src="./images/bnr2.png" alt=""></div>
+                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
+                        <div class="swiper-slide b"><img src="./images/bnr2.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <!-- detail부분 수정 -->
+             <div class="detail_container">
+                <div class="loader">
+                    <p class="designtitle">DETAIL</p>
+                </div>
+                <div class="detail_wrapper">
+                    <div class="swiper detail">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide d"><img src="./images/detail11.jpg" alt=""></div>
+                            <div class="swiper-slide d"><img src="./images/detail12.jpg" alt=""></div>
+                            <div class="swiper-slide d"><img src="./images/detail11.jpg" alt=""></div>
+                            <div class="swiper-slide d"><img src="./images/detail12.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!-- ===detail==== -->
+<!--             <div class="detail_container">
+                <div class="loader">
+                    <p class="designtitle">DETAIL</p>
+                    <div class="loader"></div>  
+                </div>
+                <div class="swiper detail">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide d"><img src="./images/detail1.png" alt=""></div>
+                        <div class="swiper-slide d"><img src="./images/detail2.png" alt=""></div>
+                        <div class="swiper-slide d"><img src="./images/detail3.png" alt=""></div>
+                        <div class="swiper-slide d"><img src="./images/detail2.png" alt=""></div>
+                    </div>
+                </div>
                 <div class="swiper-scrollbtn">
                     <a href="#" class="prev"><img src="./images/prev.png" alt="이전"></a>
                     <a href="#" class="next"><img src="./images/next.png" alt="다음"></a>
                 </div>
-            </div>
-        </div>
-        <div class="design_container">
-            <h1>DESIGN</h1>
-            <div class="sns_container">
-                <p class="designtitle">SNS</p>                
-                <div class="swiper sns">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide s"><img src="./images/SNS1.png" alt=""></div>
-                        <div class="swiper-slide s"><img src="./images/SNS1.png" alt=""></div>
-                        <div class="swiper-slide s"><img src="./images/SNS1.png" alt=""></div>
-                        <div class="swiper-slide s"><img src="./images/SNS1.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-            <div class="bnr_container">
-                <p class="designtitle">BNR</p>
-                <div class="swiper bnr">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
-                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
-                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
-                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-            <div class="detail_container">
-                <p class="designtitle">DETAIL</p>
-                <div class="swiper detail">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide d"><img src="./images/detail1.png" alt=""></div>
-                        <div class="swiper-slide d"><img src="./images/detail1.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
+            </div> -->
             <!-- 디자인 팝업 -->
             <div class="popup_bg">
                 <div class="scroll_wrap">
@@ -264,31 +313,13 @@
                 </div>
             </div>
         </div>
-<!--         <div class="design_container">
-            <h1>DESIGN</h1>
-            <div class="sns_container">
-                <p class="designtitle">SNS</p>
-                <div class="swiper sns">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide s"><img src="./images/SNS1.png" alt=""></div>
-                        <div class="swiper-slide s"><img src="./images/SNS1.png" alt=""></div>
-                        <div class="swiper-slide s"><img src="./images/SNS1.png" alt=""></div>
-                        <div class="swiper-slide s"><img src="./images/SNS1.png" alt=""></div>
-                    </div>
-                </div>
+        <!-- 마지막 인사 -->
+        <div class="ending">
+            <div class="ending_title">
+                <p>고객의 니즈에 다가서는 감각적인 디자이너가 되겠습니다.</p>
+                <p><em>THANK YOU : &#41;</em></p>
             </div>
-            <div class="bnr_container">
-                <p class="designtitle">BANNER</p>
-                <div class="swiper bnr">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
-                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
-                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
-                        <div class="swiper-slide b"><img src="./images/bnr1.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+        </div>
     </main>
 </body>
 </html>
